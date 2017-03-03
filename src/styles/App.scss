@@ -13,14 +13,38 @@ html,body{
 .stage{
   position: relative;
   width:100%;
-  height:680px;
+  height:900px;
 }
 
 .img-sec{
   width:100%;
   height:100%;
   overflow:hidden;
-  background-color: #ddd
+  background-color: #ddd;
+
+  @at-root {
+    .img-figure{
+        position:absolute;
+        width:220px;
+        background-color: white;
+        margin:0;
+        padding: 20px;
+        box-sizing: border-box;
+        img{
+          width:180px;
+          height:260px;
+        }
+    }
+    figcaption{
+      text-align: center;
+      .img-title{
+            color:#a7a0a2;
+            font-size: 16px;
+            margin:20px 0 0 0;
+          }
+    }
+   
+  }
 }
 
 controller-nav{
